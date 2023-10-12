@@ -1,0 +1,74 @@
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: (26px/16px);
+    color: $text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-weight: 500;
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    @include transition;
+}
+
+input,
+textarea,
+button {
+    padding: 10px 25px;
+    border: 1px solid $border;
+    outline: none;
+    @include transition;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-color: $primary;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    @include transition;
+}
+
+
+/*Hide number spin button*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
